@@ -3,105 +3,50 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CryptoX Wallet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #0d1117;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-            animation: fadeIn 1.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .logo {
-            width: 140px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 2.2em;
-            margin: 10px 0 5px 0;
-        }
-
-        p {
-            color: #c9d1d9;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            background-color: #238636;
-            border: none;
-            color: white;
-            padding: 15px 25px;
-            margin: 10px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn.secondary {
-            background-color: #30363d;
-        }
-
-        .btn:hover {
-            background-color: #2ea043;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 13px;
-            color: #8b949e;
-            text-align: center;
-        }
-
-        .icons img {
-            width: 22px;
-            margin: 0 5px;
-            vertical-align: middle;
-        }
-
-        .socials {
-            margin-top: 12px;
-        }
-
-        .socials a {
-            color: #58a6ff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
+    <title>CryptoX - Prévente Officielle</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <img src="logo.png" alt="CryptoX Logo" class="logo">
-    <h1>CryptoX Wallet</h1>
-    <p>Sécurisez votre avenir crypto</p>
-    <button class="btn">Créer un portefeuille</button>
-    <button class="btn secondary">Importer un portefeuille</button>
+    <header>
+        <div class="logo">🛡️ CryptoX</div>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#buy">Acheter CRX</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>🚀 Rejoignez la Révolution Crypto avec CryptoX</h1>
+        <p>Le wallet sécurisé nouvelle génération</p>
+        <a href="#buy" class="cta-button">Acheter CRX maintenant</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>À propos</h2>
+        <p>CryptoX est une application de portefeuille crypto innovante, axée sur la sécurité, l'anonymat et l'accessibilité. Notre objectif est de fournir un outil fiable à tous les utilisateurs de crypto.</p>
+    </section>
+
+    <section id="tokenomics" class="section">
+        <h2>Tokenomics</h2>
+        <ul>
+            <li>Total Supply : 1 000 000 000 CRX</li>
+            <li>Prévente : 200 000 000 CRX (20%)</li>
+            <li>Prix de prévente : 0,01 € / CRX</li>
+            <li>Cryptos acceptées : ETH, USDT, SOL</li>
+        </ul>
+    </section>
+
+    <section id="buy" class="section">
+        <h2>Acheter CRX</h2>
+        <p>Bientôt disponible : connexion Metamask et achat direct</p>
+        <a href="#" class="cta-button disabled">Connecter mon Wallet</a>
+    </section>
+
     <footer>
-        Audité par <strong>CERTIK</strong>
-        <div class="icons">
-            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH">
-            <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="SOL">
-        </div>
-        <div class="socials">
-            <a href="#">Twitter</a> |
-            <a href="#">Telegram</a> |
-            <a href="#">GitHub</a>
-        </div>
+        <p>&copy; 2025 CryptoXWallet. Tous droits réservés.</p>
+        <p>Contact : support@cryptoxwallet.com</p>
     </footer>
 </body>
 </html>
