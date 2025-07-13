@@ -1,10 +1,103 @@
 
-body { background-color: #0e0e0e; color: #e0e0e0; font-family: sans-serif; margin: 0; padding: 0; }
-header { background-color: #002c59; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
-.logo img { height: 50px; margin-right: 1rem; }
-select { background-color: #008cff; color: white; padding: 0.5rem; border-radius: 4px; }
-main { padding: 2rem; }
-button, .buy-button { background-color: #008cff; color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 1rem; }
-footer { background-color: #002c59; text-align: center; padding: 1rem; margin-top: 2rem; }
-.progress-container { width: 100%; background-color: #333; border-radius: 8px; margin-top: 1rem; }
-.progress-bar { background-color: #008cff; height: 24px; border-radius: 8px; text-align: center; line-height: 24px; color: white; }
+body {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #008cff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+.hero-logo {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-size: 1.8rem;
+  color: #4dabff;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.buy-button {
+  background-color: #008cff;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#about {
+  padding: 2rem;
+}
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 1rem;
+  color: #999;
+}
+
+.hero-logo {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.hero h1, .hero p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.buy-button {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1.2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
